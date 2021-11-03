@@ -1,0 +1,21 @@
+@import 'base/variables';
+@import 'base/extend';
+
+@import 'components/body';
+@import 'components/header';
+@import 'components/footer';
+
+
+/* 
+nav{
+    background-color: $color-principal;
+    color: $color-texto; */
+
+/*     ul{
+        @extend %flexboxRowNav;
+    }
+        ui{
+            font-size: 5rem;
+            @include flexbox (wrap, center, row)
+        }
+} */

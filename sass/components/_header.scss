@@ -1,0 +1,98 @@
+@import 'sass/base/_variables.scss';
+@import 'sass/base/_extend.scss';
+
+.header{
+    background: $color-fondo;
+    height: auto;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:space-around;
+    align-items:center;
+    padding: 2%;
+
+    @media only screen and (min-width: 768px) {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content:space-around;
+        align-items:flex-end;
+    }
+
+
+    .header__logotipo{
+            text-align: center;
+            width: 25%;
+        }
+
+        .header__logo--titulo{
+            color: $color-texto ;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.4rem;
+
+            @media only screen and (min-width: 768px) {
+                    font-size: 1.65rem;
+            }
+        }
+        
+        .header__logo--bajada{
+            color: $color-texto ;
+            font-size: 0.9rem;
+            font-weight: 200;
+
+            @media only screen and (min-width: 768px) {
+                    font-size: 1rem;
+            }
+        }
+
+    .header__nav{
+        font-size: 0.9rem;
+        padding: 1%;
+        text-align: center;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: 65%;
+        margin-top: 2%;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 1.2rem;
+            padding: 2%;
+            text-align: right;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    .header__nav a{
+        text-decoration: none;
+        list-style: none;
+        color: $color-texto;
+    }
+
+    .header__nav li{
+        padding: 1%;
+        display: inline;
+    }
+
+    .header__nav a:hover{
+        color: $color-acento;
+    }
+
+}
+
+
+
+/*Navegador header*/
+
+@media only screen and (min-width: 768px) {
+
+
+        .header__logo--titulo{
+            font-size: 1.65rem;
+        }
+        
+        .header__logo--bajada{
+            font-size: 1rem;
+        }
+    }

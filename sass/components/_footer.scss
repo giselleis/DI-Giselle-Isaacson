@@ -1,0 +1,65 @@
+.footer{
+    background-color: #4F4F4F ;
+    color: #F8F5F1;
+    font-size:1.3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+
+    .footer__Central{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        height: 100px;
+        margin-top: 2%;
+    }
+    
+    .footer__logotipo{
+        text-align: center;
+        width: 25%;
+
+        .footer__logotipo--titulo{
+            color: #F8F5F1 ;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+        }
+        
+        .footer__logotipo--bajada{
+            color: #F8F5F1 ;
+            font-size: 1rem;
+            font-weight: 200;
+        }
+        }
+
+        .footer__logos{
+            width: 20%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 3%;
+
+            a{
+                font-size: 1.5rem;
+                text-decoration: none;
+                padding: 0.5%;
+                color: #F8F5F1;
+            
+            }
+        }
+
+        h6{
+            margin: 2%;
+            padding: 2%;
+            
+        }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+%flexboxRowHeader{
+    display: flex;
+    flex-flow: row nowrap;;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+%flexboxColumnHeader{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* %botones{
+    border: solid black;
+    border-radius: 4px;
+    background-color: $color-botones;
+} */
+
+/* Mixins */
+@mixin flexbox($direction, $justify, $wrap) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: center;
+}
