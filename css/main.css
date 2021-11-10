@@ -15,6 +15,8 @@
 } */
 /* Mixins */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -144,6 +146,249 @@ body {
   .footer h6 {
     margin: 2%;
     padding: 2%; }
+
+/*Font family*/
+/* Variables */
+/* LISTAS */
+/* $colores:
+    red,
+    blue,
+    black; */
+/*     'Roboto', sans-serif; */
+/* MAPAS */
+/* %botones{
+    border: solid black;
+    border-radius: 4px;
+    background-color: $color-botones;
+} */
+/* Mixins */
+.botonBody {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  margin-right: 3%;
+  margin-bottom: 2%; }
+  .botonBody .botonBody__Mas {
+    background-color: #F8F5F1;
+    color: #F8A488;
+    font-size: 1.2rem;
+    border: solid 0.2rem;
+    border-radius: 8px;
+    padding: 0.3rem 1rem;
+    font-weight: 400;
+    width: 105%;
+    height: 105%; }
+  .botonBody .botonBody__Mas:hover {
+    background-color: #F8A488;
+    color: #F8F5F1; }
+
+/*Font family*/
+/* Variables */
+/* LISTAS */
+/* $colores:
+    red,
+    blue,
+    black; */
+/*     'Roboto', sans-serif; */
+/* MAPAS */
+/* %botones{
+    border: solid black;
+    border-radius: 4px;
+    background-color: $color-botones;
+} */
+/* Mixins */
+.presentacion {
+  background-color: #5AA897;
+  color: #F8F5F1;
+  height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .presentacion .presentacion__Imagenes {
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center; }
+  .presentacion h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95rem;
+    margin: 5%;
+    text-align: center; }
+  .presentacion .presentacion__Imagenes--Chica {
+    height: 8rem;
+    border-radius: 30px;
+    padding: 1%; }
+  .presentacion .presentacion__Imagenes--Grande {
+    height: 10rem;
+    border-radius: 30px;
+    padding: 1%; }
+
+@media only screen and (min-width: 768px) {
+  .presentacion {
+    height: 320px; }
+    .presentacion .presentacion__Imagenes {
+      width: 100%; }
+    .presentacion .presentacion h3 {
+      font-size: 1.3rem;
+      text-align: left; }
+    .presentacion .presentacion__Imagenes--Chica {
+      height: 10rem; }
+    .presentacion .presentacion__Imagenes--Grande {
+      height: 12rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .presentacion {
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+  .presentacion__Imagenes {
+    width: 100%; }
+  .presentacion h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%; }
+  .presentacion__Imagenes--Chica {
+    height: 12rem;
+    padding: 2%; }
+  .presentacion__Imagenes--Grande {
+    height: 15rem;
+    padding: 2%; } }
+
+.conocerMiTrabajo {
+  background-color: #45526C;
+  color: #F8F5F1;
+  height: auto;
+  text-align: center;
+  padding: 2%; }
+  .conocerMiTrabajo h4 {
+    font-weight: 200;
+    font-size: 1rem; }
+  .conocerMiTrabajo i {
+    font-size: 1.3rem; }
+
+@media only screen and (min-width: 768px) {
+  .conocerMiTrabajo {
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%; }
+    .conocerMiTrabajo h4 {
+      font-weight: 200;
+      padding: 1%; } }
+
+.pad3 {
+  padding: 3%; }
+  .pad3 .card {
+    border: none; }
+  .pad3 .card-body {
+    background-color: #5AA897;
+    height: 7rem;
+    color: #F8F5F1; }
+  .pad3 .card-img-top {
+    height: 12rem;
+    object-fit: cover; }
+
+.titulosSecciones {
+  padding: 3%;
+  display: flex;
+  flex-flow: column nowrap; }
+  .titulosSecciones h3 {
+    color: #4F4F4F;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; }
+  .titulosSecciones h4 {
+    color: #4F4F4F;
+    font-weight: 100;
+    font-size: .8rem; }
+  .titulosSecciones h5 {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; }
+  .titulosSecciones p {
+    color: #F8F5F1;
+    font-weight: 100;
+    font-size: 0.6rem; }
+
+@media only screen and (min-width: 768px) {
+  .titulosSecciones {
+    padding: 2%; }
+    .titulosSecciones h3 {
+      font-size: 1.3rem;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600; }
+    .titulosSecciones h4 {
+      font-size: 1rem; }
+    .titulosSecciones p {
+      font-size: 0.8rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .titulosSecciones {
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap; }
+    .titulosSecciones h3 {
+      color: #4F4F4F;
+      font-size: 1.5rem;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600; }
+    .titulosSecciones h4 {
+      font-weight: 100;
+      font-size: 1.3rem; }
+    .titulosSecciones p {
+      font-weight: 100;
+      font-size: 1rem; } }
+
+.herramientas {
+  display: flex;
+  background-color: #45526C;
+  color: #F8F5F1;
+  height: auto;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1%;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .herramientas h4 {
+    font-weight: 200;
+    font-size: 0.9rem; }
+  .herramientas .herramientas__imagenes {
+    font-weight: 200;
+    padding: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
+    .herramientas .herramientas__imagenes img {
+      font-weight: 200;
+      padding: 1%;
+      width: 8%; }
+
+@media only screen and (min-width: 1024px) {
+  .herramientas {
+    display: flex;
+    height: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5%;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .herramientas h4 {
+      font-size: 1.5rem;
+      margin-top: 1%; }
+    .herramientas img {
+      font-weight: 200;
+      padding: 1%; } }
 
 /* 
 nav{
