@@ -1,0 +1,174 @@
+@import 'sass/base/_variables.scss';
+@import 'sass/base/_extend.scss';
+
+
+.contactame{
+    background-color: $color-acento;
+    height: auto;
+    font-size: $tamano-fuente-titulo-s;
+    color: $color-fondo;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 600;
+    padding: 2%;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+        font-size: $tamano-fuente-titulo-m;
+        text-align: left;
+    }
+}
+
+.contacto{
+    display: flex;
+    color: $color-texto;
+    background-color: $color-fondo;
+    height: auto;
+    text-align: center;
+    font-size: $tamano-fuente-titulo-s;
+    padding: 3%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+
+    @media only screen and (min-width: 768px) {
+        text-align: left;
+        font-size: $tamano-fuente-titulo-m;
+        display: flex;
+        color: $color-texto;
+        height: auto;
+        text-align: center;
+        font-size: $tamano-fuente-titulo-s;
+        padding: 3%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items:flex-start;
+        justify-content:space-between;
+        align-content: center;
+        text-align: left;
+    }
+}
+
+.datos{
+    text-align: center;
+    margin-bottom: 5%;
+
+    @media only screen and (min-width: 768px){
+        text-align: left;
+        margin-left: 6%;
+    }
+
+    h3{
+        font-family: 'Raleway', sans-serif; 
+        font-size: $tamano-fuente-titulo-s;
+        margin-bottom: 1%;
+
+        @media only screen and (min-width: 768px) {
+            font-size: $tamano-fuente-titulo-m;
+        }
+    }
+
+    h4{
+        font-size: 1rem;
+        margin-bottom: 5%;
+        font-weight: 400;
+    }
+    h5{
+        font-size: 0.8rem;
+        margin-bottom: 3%;
+        font-weight: 400;
+    }
+    a{
+        font-size: 1rem;
+        margin-bottom: 3%;
+        text-decoration: none;
+        color: $color-texto;
+        margin-right: 3%;
+    }
+}
+
+.formulario{
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px $color-principal;
+    padding: 2%;
+    box-shadow: 6px 6px 15px rgb(182, 182, 182);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+
+
+    @media only screen and (min-width: 768px) {
+        font-size: 1rem;
+        padding: 3%;
+        margin-right: 10%;    
+        border-radius: 20px;
+        width: 70%;
+    }
+
+    input{
+        text-transform: capitalize;
+        width: 100%;
+        border: solid 2px $color-principal;
+        border-radius: 5px;
+        height: 25px;
+    }
+
+    .campos{
+        font-family: 'Roboto', sans-serif;
+        color: $color-texto;
+        width: 100%;
+        text-align: left;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    textarea{
+        width: 100%;
+        height: 100px;
+        border: solid 2px $color-principal;
+        border-radius: 5px;
+    }
+
+    .botondoble{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:center;
+        margin: 3%;
+        padding: 2%;
+    
+        input{
+            margin-left: 5%;
+            margin-right: 5%;
+            width: auto;
+    
+            @media only screen and (min-width: 768px) {
+                width: auto;
+            }
+        }
+    
+        .botonBody__Mas{
+            background-color: white;
+            color: $color-acento;
+            font-size: 1rem;
+            border: solid 0.1rem;
+            border-radius: 8px;
+            padding: 0.3rem 1rem;
+            font-weight: 400;
+            height: 105%;
+        }
+    
+        .botonBody__Mas:hover{
+            background-color: $color-acento;
+            color: $color-fondo;
+        }
+    }
+}
+

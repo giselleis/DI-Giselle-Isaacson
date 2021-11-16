@@ -18,7 +18,7 @@
     
         <link rel="shortcut icon" href="" type=>
         
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/main.css">
     
         <title>Giselle Isaacson | Diseñadora industria - UX/UI</title>
     </head>
@@ -29,7 +29,7 @@
 
         <div class="header__logotipo">
             <a href="index.html">
-                <img src="./Fotos/logoGi.png" alt="Logo DI Giselle Isaacson"  width="25%">
+                <img src="./Fotos/logoGI.png" alt="Logo DI Giselle Isaacson"  width="25%">
             </a>
             <h1 class="header__logo--titulo">Giselle Isaacson</h1>
             <h3 class="header__logo--bajada">Diseñadora industrial - UX/UI</h3>
@@ -61,36 +61,58 @@
 
 <!--Inicio formulario-->
     <div class="contactame">
-        <h2>Contactame!</h2>
+        <h2>Nos ponemos en contacto?</h2>
     </div>
 
-    <form action="guardar.php" method="POST" class="contacto">
+    <div class="contacto">
+        <div class="datos">
+            <h3>Empecemos a hablar!</h3>
+            <h4>Me encantará saber de vos y cómo nos podemos potenciar.
+            </h4>
+            <h5> Mail: giselle.isaacson@gmail.com</h5>
+            <div> 
+                <a href="https://www.linkedin.com/in/giselleis/" title="Acceso directo al perfil de Linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                </a> 
+                <a href="https://www.behance.net/giselleis" title="Acceso directo al perfil de Behance">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </div>
 
-
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre"></input>
-
-        <div>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido">
         </div>
 
-        <div>
-            <label for="mail">Mail</label>
-            <input type="text" name="mail">
-        </div>
 
-        <div>
-            <label for="consulta">Consulta</label>
-            <textarea name="consulta" id="" cols="50" rows="10"></textarea>
-        </div>
 
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar formulario">
-        </div>
+        <form action="guardar.php" method="POST" class="formulario">
 
-    </form>
+            <div class="campos">
+                <label for="nombre" >Nombre</label>
+                <input type="text" name="nombre"></input>
+            </div>
+
+            <div class="campos">
+                <label for="apellido" >Apellido</label>
+                <input type="text" name="apellido">
+            </div>
+
+            <div class="campos">
+                <label for="mail" >Mail</label>
+                <input type="text" name="mail" width="100%">
+            </div>
+
+            <div class="campos">
+                <label for="consulta" >Consulta</label>
+                <textarea name="consulta" id="" ></textarea>
+            </div>
+
+            <div class="botondoble">
+                <input type="submit" value="Enviar" class="botonBody__Mas">
+                <input type="reset" value="Limpiar formulario" class="botonBody__Mas">
+            </div>
+
+        </form>
+
+</div>
 
 <!--Fin formulario-->
 

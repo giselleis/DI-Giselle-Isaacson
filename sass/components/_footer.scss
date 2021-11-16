@@ -1,11 +1,22 @@
+@import 'sass/base/_variables.scss';
+@import 'sass/base/_extend.scss';
+
 .footer{
-    background-color: #4F4F4F ;
-    color: #F8F5F1;
-    font-size:1.3rem;
+    background-color: $color-texto ;
+    color: $color-fondo;
+    font-size:1rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
+
+    @media only screen and (min-width: 768px) {
+        font-size:1.3rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+    }
 
     .footer__Central{
         display: flex;
@@ -20,15 +31,24 @@
         width: 25%;
 
         .footer__logotipo--titulo{
-            color: #F8F5F1 ;
+            color: $color-fondo ;
             font-family: 'Raleway', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            font-size: 1.3rem;
+            font-weight: 600;
         }
         
         .footer__logotipo--bajada{
-            color: #F8F5F1 ;
-            font-size: 1rem;
+            color: $color-fondo ;
+            font-size: 0.7rem;
             font-weight: 200;
+            @media only screen and (min-width: 768px) {
+                font-size: 1rem;
+            }
         }
         }
 
@@ -41,10 +61,15 @@
             margin-right: 3%;
 
             a{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 text-decoration: none;
                 padding: 0.5%;
-                color: #F8F5F1;
+                color: $color-fondo;
+
+                @media only screen and (min-width: 768px) {
+                font-size: 1.5rem;
+
+                }
             
             }
         }
