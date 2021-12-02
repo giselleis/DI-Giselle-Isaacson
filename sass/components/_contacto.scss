@@ -1,7 +1,10 @@
 @import 'sass/base/_variables.scss';
 @import 'sass/base/_extend.scss';
 
-
+.separadorVerde{
+    background: $color-principal;
+    height: 10px;
+}
 .contactame{
     background-color: $color-acento;
     height: auto;
@@ -102,15 +105,17 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    align-self: start;
+    align-self: center;
+    width: 80%;
 
 
     @media only screen and (min-width: 768px) {
         font-size: 1rem;
         padding: 3%;
-        margin-right: 10%;    
+        margin-right: 5%;  
+        margin-left: 5%;  
         border-radius: 20px;
-        width: 70%;
+        width: 50%;
     }
 
     input{

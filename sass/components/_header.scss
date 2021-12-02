@@ -5,94 +5,169 @@
     background: $color-fondo;
     height: auto;
     display:flex;
-    flex-flow: column nowrap;
-    justify-content:space-around;
+    flex-flow: row nowrap;
+    justify-content:space-between;
     align-items:center;
     padding: 2%;
 
     @media only screen and (min-width: 768px) {
         display:flex;
         flex-flow: row nowrap;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items:flex-end;
     }
 
 
     .header__logotipo{
             text-align: center;
-            width: 25%;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            text-align: left;
+
+
+            @media only screen and (min-width: 768px) {
+                flex-direction: column;
+                width: 25%;
+                text-align: center;
+        }
+
+        .tipografiaLogo{
+            width: 100%;
+        }
+
+        a img{
+            width: 50px;
+        }
         }
 
         .header__logo--titulo{
             color: $color-texto ;
             font-family: 'Raleway', sans-serif;
-            font-size: 1.4rem;
+            font-size: 1rem;
+            padding-top: 4%;
 
             @media only screen and (min-width: 768px) {
-                    font-size: 1.65rem;
+                    font-size: 1.3rem;
             }
+
+            @media only screen and (min-width: 1020px) {
+                font-size: 1.6rem;
+        }
         }
         
         .header__logo--bajada{
             color: $color-texto ;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             font-weight: 200;
 
             @media only screen and (min-width: 768px) {
-                    font-size: 1rem;
+                    font-size: 0.85rem;
             }
+            @media only screen and (min-width: 1020px) {
+                font-size: 1.1rem;
+        }
         }
 
-    .header__nav{
-        font-size: 0.9rem;
-        padding: 1%;
-        text-align: center;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        width: 65%;
-        margin-top: 2%;
+    #btn-menu{
+        display: none;
+    }
+
+
+    #btn-menu:checked ~ .header__nav{
+        margin-top: 75%;
+    }
+
+    label{
+        font-size: 2rem;
+        padding: 2px;
+        color: $color-texto;
 
         @media only screen and (min-width: 768px) {
-            font-size: 1.2rem;
-            padding: 2%;
+            display: none;;
+    }
+    }
+
+    label:hover{
+        cursor: pointer;
+        color: $color-acento;
+    }
+
+    .header__nav{
+        position: absolute;
+        background-color: $color-acento;
+        opacity: 95%;
+        width: 96%;
+        margin-top: -500vh;
+        flex-flow: column nowrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: $tamano-fuente-bajada-m;
+        padding: 1%;
+        transition: 1s;
+
+        ul{
+            flex-direction: column;
+        }
+        
+
+        @media only screen and (min-width: 768px) {
+            position: relative;
+            font-size: $tamano-fuente-bajada-s;
+            background-color: $color-fondo;
+            padding: 1%;
             text-align: right;
             flex-flow: row nowrap;
             justify-content: flex-end;
             align-items: center;
             width: 100%;
         }
+
+        @media only screen and (min-width: 1020px) {
+            font-size: $tamano-fuente-bajada-m;
+        }
+
     }
 
-    .header__nav a{
+
+    a{
         text-decoration: none;
         list-style: none;
         color: $color-texto;
+
     }
 
-    .header__nav li{
-        padding: 1%;
-        display: inline;
+    li{
+        padding: 3%;
+        display: block;
+        
+        @media only screen and (min-width: 768px){
+            display: inline;
+            padding: 1%;
+        }
     }
 
-    .header__nav a:hover{
+    .current{
         color: $color-acento;
+        border-bottom: solid 2px $color-acento;
     }
+
+    a:hover{
+        color: $color-fondo;
+
+        @media only screen and (min-width: 768px) {
+            color: $color-acento;
+        }
+    }
+
+    a:active{
+        color: $color-principal;
+    }
+
 
 }
 
-
-
-/*Navegador header*/
-
-@media only screen and (min-width: 768px) {
-
-
-        .header__logo--titulo{
-            font-size: 1.65rem;
-        }
-        
-        .header__logo--bajada{
-            font-size: 1rem;
-        }
-    }
