@@ -206,19 +206,19 @@ body {
     .footer .footer__logotipo .footer__logotipo--titulo {
       color: #F8F5F1;
       font-family: 'Raleway', sans-serif;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 400; }
     @media only screen and (min-width: 768px) {
       .footer .footer__logotipo {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 600; } }
     .footer .footer__logotipo .footer__logotipo--bajada {
       color: #F8F5F1;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       font-weight: 200; }
       @media only screen and (min-width: 768px) {
         .footer .footer__logotipo .footer__logotipo--bajada {
-          font-size: 1rem; } }
+          font-size: 0.9rem; } }
   .footer .footer__logos {
     width: 20%;
     display: flex;
@@ -236,7 +236,8 @@ body {
           font-size: 1.5rem; } }
   .footer h6 {
     margin: 2%;
-    padding: 2%; }
+    padding: 2%;
+    font-size: 0.8rem; }
 
 /*Font family*/
 /* Variables */
