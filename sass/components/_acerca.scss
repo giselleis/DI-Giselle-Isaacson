@@ -26,8 +26,8 @@
 
     h4{
     font-weight: 200;
-    font-size: $tamano-fuente-bajada-s;
-    width: 75%;
+    font-size: 0.8rem;
+    width: 80%;
     margin-top: 1%;
     margin-left: 3%;
     margin-bottom: 3%;
@@ -90,14 +90,14 @@
         }
     }
 
-    .trabajo__descripcion { 
+    .trabajo__descripcion{ 
         grid-column: 2/4;
         color: #45526C;
         font-size: 0.8rem;
         padding: 1%;
 
         @media only screen and (min-width: 768px) {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 }
