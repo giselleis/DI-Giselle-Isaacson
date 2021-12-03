@@ -9,6 +9,7 @@
     justify-content:space-between;
     align-items:center;
     padding: 2%;
+    z-index: 20;
 
     @media only screen and (min-width: 768px) {
         display:flex;
@@ -78,7 +79,7 @@
 
 
     #btn-menu:checked ~ .header__nav{
-        margin-top: 75%;
+        margin-top: 65%;
     }
 
     label{
@@ -107,8 +108,9 @@
         align-items: center;
         justify-content: center;
         font-size: $tamano-fuente-bajada-m;
-        padding: 1%;
+/*         padding: 1%; */
         transition: 1s;
+        z-index: 10;
 
         ul{
             flex-direction: column;
